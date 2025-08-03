@@ -1,42 +1,19 @@
-# Earthquake Data Analysis and Magnitude Prediction
+# Earthquake Analysis & Magnitude Prediction
 
-This project analyzes a dataset of recent earthquakes to understand their characteristics and builds a machine learning model to predict their magnitude.
+This repository contains a comprehensive data analysis and machine learning project focused on global earthquake data. The primary goal is to explore patterns in earthquake occurrences and to build a model that can predict their magnitude.
 
-## Dataset
+The entire analysis is documented in a Jupyter Notebook (`Earthquake_Analysis_Improved.ipynb`) that serves as an article-style walkthrough of the project.
 
-The dataset used is `all_month.csv`, which contains information about earthquakes that occurred in the last month.
+#### Key Features:
 
-## Analysis
+*   **In-Depth Data Analysis:** The project starts with data cleaning and feature engineering, creating new, insightful features from the raw data.
+*   **Exploratory Data Analysis (EDA):** Includes a variety of visualizations like histograms, scatter plots, and a correlation heatmap to uncover trends and relationships within the data.
+*   **Machine Learning Model:** A `RandomForestRegressor` is implemented using Scikit-learn to predict earthquake magnitudes based on features like latitude, longitude, and depth. The model's performance is evaluated using cross-validation.
+*   **Interactive Visualization:** An interactive world map is generated using `folium`, displaying a heatmap of earthquake locations and magnitudes.
+*   **Technologies Used:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, and Folium.
 
-The analysis is performed in the `Earthquake_Analysis.ipynb` Jupyter Notebook. It includes:
-
-- **Exploratory Data Analysis (EDA):** 
-    - Loading and cleaning the data.
-    - Visualizing the distribution of earthquake magnitudes and depths.
-    - Plotting the locations of earthquakes on a world map.
-    - Analyzing earthquake trends over time.
-- **Machine Learning Model:**
-    - A linear regression model is built to predict earthquake magnitude based on latitude, longitude, and depth.
-    - The model is evaluated using Mean Squared Error and R-squared metrics.
-
-## Visualizations
-
-The notebook includes the following visualizations:
-
-1.  Distribution of Earthquake Magnitudes
-2.  Distribution of Earthquake Depths
-3.  Magnitude vs. Depth Scatter Plot
-4.  Earthquake Magnitude Over Time
-5.  World Map of Earthquakes
-6.  Correlation Heatmap
-7.  Box plot of magnitude by magType
-8.  Violin plot of magnitude by magType
-9.  Pairplot of numerical features
-10. Earthquakes by hour of the day
-11. Actual vs. Predicted Magnitude Scatter Plot
-
-## How to Run
+### How to Run
 
 1.  Ensure you have Python and Jupyter Notebook installed.
-2.  Install the required libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`.
-3.  Open and run the `Earthquake_Analysis.ipynb` notebook.
+2.  Install the required libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `folium`.
+3.  Open and run the `Earthquake_Analysis_Improved.ipynb` notebook.
