@@ -1,19 +1,38 @@
-# Earthquake Analysis & Magnitude Prediction
+# Earthquake Analysis and Magnitude Prediction
 
-This repository contains a comprehensive data analysis and machine learning project focused on global earthquake data. The primary goal is to explore patterns in earthquake occurrences and to build a model that can predict their magnitude.
+This project analyzes global earthquake data and provides a machine learning model to predict earthquake magnitudes.
 
-The entire analysis is documented in a Jupyter Notebook (`Earthquake_Analysis_Improved.ipynb`) that serves as an article-style walkthrough of the project.
+## Setup
 
-#### Key Features:
+1.  **Clone the repository:**
 
-*   **In-Depth Data Analysis:** The project starts with data cleaning and feature engineering, creating new, insightful features from the raw data.
-*   **Exploratory Data Analysis (EDA):** Includes a variety of visualizations like histograms, scatter plots, and a correlation heatmap to uncover trends and relationships within the data.
-*   **Machine Learning Model:** A `RandomForestRegressor` is implemented using Scikit-learn to predict earthquake magnitudes based on features like latitude, longitude, and depth. The model's performance is evaluated using cross-validation.
-*   **Interactive Visualization:** An interactive world map is generated using `folium`, displaying a heatmap of earthquake locations and magnitudes.
-*   **Technologies Used:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, and Folium.
+    ```bash
+    git clone https://github.com/your-username/Earth-quick-analysis-main.git
+    cd Earth-quick-analysis-main
+    ```
 
-### How to Run
+2.  **Install the dependencies:**
 
-1.  Ensure you have Python and Jupyter Notebook installed.
-2.  Install the required libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `folium`.
-3.  Open and run the `Earthquake_Analysis_Improved.ipynb` notebook.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Unzip the data:**
+
+    ```bash
+    unzip all_month.zip
+    ```
+
+## Usage
+
+1.  **Run the Streamlit dashboard:**
+
+    ```bash
+    streamlit run app.py
+    ```
+
+2.  **Open your browser and navigate to the URL provided by Streamlit.**
+
+## Notebook
+
+The `Earthquake_Analysis.ipynb` notebook contains the detailed analysis and model development process.
